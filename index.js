@@ -127,14 +127,13 @@ ${userInput.contribution}
 ## License
 ---
 ${licenseInformationPop(userInput.license, userInput.owner)}`;
-
+        // Takes the information provided in outputInfo and writes it to the file called README, if one does not exist than one shall be made.
         fs.writeFile(`README.md`, outputInfo, (err) =>
             err ? console.error(err) : console.log(`File has been created, Check your Local Files`)
         );
     });
 
 // Splits the information in order to make a list and removes the comma from the array map for the print out.
-
 function mdList(listItem, separator) {
     let splitter = listItem.split(separator);
     let listArray = [splitter].flat(2).map(self => `\n* ` + self.trim());

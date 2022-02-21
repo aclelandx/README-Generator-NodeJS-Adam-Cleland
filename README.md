@@ -1,8 +1,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# awdawdawdawdawdawdawd
+# README-Generator-NodeJS-Adam-Cleland
 ### Description
-awdawdawdawdawd
+We are tasked with creating a readme generator that will allow the user to put in information on the terminal and have their inputs automatically readted and formatted into a professional looking readme file.
 
 ## Table of contents
 ---
@@ -16,23 +16,23 @@ awdawdawdawdawd
 
 ## Installation
 ---
-awdawdawdawdawdawdadadw
+Download the Repo and Run on your local machine
 
 ## Usage Information
 ---
-awdawdadadawdawdawdawdawdawd
+To begin the program, Navigate to the directory that the index.js is in and run "node index.js" \n then fill out the questions provided.
 
 ## Tests
 ---
 The command for running tests is :
 
 
-        npm test
+    npm test
 
 ## Languages Utilized
 ---
 
-* 
+* js
 
 ## Contributions
 ---
@@ -42,13 +42,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ---
 ### For Any Questions about the Application feel free to reach out to me on:
 
-Github:[awdawdawdadad](https://github.com/awdawdawdadad)
+Github:[aclelandx](https://github.com/aclelandx)
 
-Email:<awdawdawdawdawd>
+Email:<aclelandx@gmail.com>
 
 ## License
 ---
-Copyright [2022] [cleland]
+Copyright [2022] [Adam Cleland]
 
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         
