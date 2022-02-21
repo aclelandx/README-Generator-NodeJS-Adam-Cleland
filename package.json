@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "readme-generator-nodejs-adam-cleland",
+  "description": "As a portfolio Assignment for the OSU Coding Boot Camp we are tasked with creating a professional README Generator that allows the user to input their information onto a new MD file labeled Readme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aclelandx/README-Generator-NodeJS-Adam-Cleland.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aclelandx/README-Generator-NodeJS-Adam-Cleland/issues"
+  },
+  "homepage": "https://github.com/aclelandx/README-Generator-NodeJS-Adam-Cleland#readme"
+}
