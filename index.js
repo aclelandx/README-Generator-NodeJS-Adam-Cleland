@@ -1,7 +1,10 @@
+// Importing the two dependencies that are required for the application to function properly.
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
 
+// uses the inquirer npm to allow for all of the information to be formatted and have a return value according to the way in which they are setup through the package
 inquirer
+    // asks all the questions in this order.
     .prompt([
         {
             type: `input`,
@@ -74,6 +77,7 @@ inquirer
             message: `What name would you like the License to be under?\n`,
         }
     ])
+    // Takes the users information and imports their inputs as text on the readme file.
     .then((userInput) => {
         let outputInfo =
             `
