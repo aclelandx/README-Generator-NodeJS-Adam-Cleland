@@ -1,37 +1,54 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-# The Testing of the generator
-
-The hole purpose of me writing this right now to to make sure that THIS information is being put in the correct location for the new MD file that is goiong to be generated at the end of the script
+# awdawdawdawdawdawdawd
+### Description
+awdawdawdawdawd
 
 ## Table of contents
 ---
 - **Installation Instructions**
 - **Usage Information**
+- **Tests**
 - **Languages Utilized**
-- **Contributes**
+- **Contributions**
 - **Questions**
 - **License**
+
+## Installation
+---
+awdawdawdawdawdawdadadw
+
+## Usage Information
+---
+awdawdadadawdawdawdawdawdawd
+
+## Tests
+---
+The command for running tests is :
+
+
+        npm test
 
 ## Languages Utilized
 ---
 
-* js
-* css
-* html5
+* 
+
+## Contributions
+---
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Questions
 ---
+### For Any Questions about the Application feel free to reach out to me on:
 
- ### For Any Questions about the Application feel free to reach out to me on:
+Github:[awdawdawdadad](https://github.com/awdawdawdadad)
 
-Github:[aclelandx](https://github.com/aclelandx)
-
-Email:<aclelandx@gmail.com>
+Email:<awdawdawdawdawd>
 
 ## License
 ---
-Copyright [2022] [Adam Cleland]
+Copyright [2022] [cleland]
 
         Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
         

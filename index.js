@@ -29,6 +29,33 @@ inquirer
 
         {
             type: `input`,
+            message: `Please provide information pertaining to the installation of your project.\n`,
+            name: `installation`,
+            default: `Download the Repo and Run on your local machine`,
+        },
+
+        {
+            type: `input`,
+            message: `Please include any information about the usage of you application that you would like to include.\n`,
+            name: `usage`,
+        },
+
+        {
+            type: `input`,
+            message: `Please add the Contribution Guidelines that you would like to include (Hit enter to use the Default).\n`,
+            name: `contribution`,
+            default: `Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.`,
+        },
+
+        {
+            type: `input`,
+            message: `What command should be used for tests to be conducted?\n`,
+            name: `testCMD`,
+            default: `npm test`,
+        },
+
+        {
+            type: `input`,
             message: `What languages were utilized with this application? (Separate Each By a Comma)\n`,
             name: `languages`,
         },
@@ -36,7 +63,7 @@ inquirer
         {
             type: `list`,
             name: `license`,
-            message: `Select which license you would like to have added`,
+            message: `Select which license you would like to have added\n`,
             choices: [`MIT`, `Apache`, `Unlicense`],
             default: `MIT`,
         },
@@ -44,7 +71,7 @@ inquirer
         {
             type: `input`,
             name: `owner`,
-            message: `What name would you like the License to be under?`,
+            message: `What name would you like the License to be under?\n`,
         }
     ])
     .then((userInput) => {
@@ -52,33 +79,50 @@ inquirer
             `
 ${licenseBadgePop(userInput.license)}
 # ${userInput.repoName}
-
+### Description
 ${userInput.repoDesc}
 
 ## Table of contents
 ---
 - **Installation Instructions**
 - **Usage Information**
+- **Tests**
 - **Languages Utilized**
-- **Contributes**
+- **Contributions**
 - **Questions**
 - **License**
+
+## Installation
+---
+${userInput.installation}
+
+## Usage Information
+---
+${userInput.usage}
+
+## Tests
+---
+The command for running tests is :
+\n
+    ${userInput.testCMD}
 
 ## Languages Utilized
 ---
 ${mdList(userInput.languages, `,`)}
 
+## Contributions
+---
+${userInput.contribution}
+
 ## Questions
 ---
-\n ### For Any Questions about the Application feel free to reach out to me on:
+### For Any Questions about the Application feel free to reach out to me on:
 \nGithub:[${userInput.gitUsername}](https://github.com/${userInput.gitUsername})
 \nEmail:<${userInput.emailAddress}>
 
 ## License
 ---
-${licenseInformationPop(userInput.license, userInput.owner)}`
-
-            ;
+${licenseInformationPop(userInput.license, userInput.owner)}`;
 
         fs.writeFile(`README.md`, outputInfo, (err) =>
             err ? console.error(err) : console.log(`File has been created, Check your Local Files`)
@@ -94,6 +138,7 @@ function mdList(listItem, separator) {
     return output;
 };
 
+// grabs the current year that this readme is being generated then takes the users selection and applies the corresponding license.
 function licenseInformationPop(selection, CRName) {
     let grabDate = new Date();
     let year = grabDate.getFullYear();
@@ -154,8 +199,9 @@ function licenseInformationPop(selection, CRName) {
         return selectedLicense;
     }
     return selectedLicense;
-}
+};
 
+// takes the selection from the options and applies the corresponding badge for the license
 function licenseBadgePop(selection) {
     let badgeLink;
     if (selection === `MIT`) {
@@ -166,12 +212,4 @@ function licenseBadgePop(selection) {
         badgeLink = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
     }
     return badgeLink;
-}
-
-// i need to make the title, description, table of contents installation instructions, usage license contribution guidelines tests and questions
-
-// section entitles questions
-
-// ask for github username, ask for email address, ask which License they would like to use.
-
-// i need to have a badge added to the top of the repository of the license type that ill be chosen by the user accompanied by the information about the license 
+};
